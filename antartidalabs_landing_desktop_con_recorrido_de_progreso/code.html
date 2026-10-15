@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;scroll-behavior:smooth;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-secondary":"#ffffff","primary":"#004275","on-background":"#0d1c2e","surface-container-high":"#dce9ff","primary-fixed":"#d2e4ff","surface-dim":"#ccdbf3","tertiary":"#00484a","surface-bright":"#f8f9ff","on-tertiary-fixed":"#002020","on-primary-container":"#afd1ff","on-tertiary-fixed-variant":"#004f51","on-surface-variant":"#414750","on-tertiary-container":"#06e5e9","on-error":"#ffffff","outline":"#727781","primary-fixed-dim":"#a1c9ff","surface-container-low":"#eff4ff","on-tertiary":"#ffffff","tertiary-fixed":"#40fafd","inverse-primary":"#a1c9ff","secondary-container":"#2b99ff","tertiary-fixed-dim":"#00dce0","on-primary":"#ffffff","error-container":"#ffdad6","on-surface":"#0d1c2e","surface-container-highest":"#d5e3fc","on-error-container":"#93000a","primary-container":"#005a9c","inverse-on-surface":"#eaf1ff","surface-variant":"#d5e3fc","on-secondary-container":"#002f58","background":"#f8f9ff","surface-container-lowest":"#ffffff","error":"#ba1a1a","surface-tint":"#1261a3","on-primary-fixed":"#001c37","outline-variant":"#c1c7d2","inverse-surface":"#233144","on-secondary-fixed":"#001c38","tertiary-container":"#006264","surface-container":"#e6eeff","secondary-fixed-dim":"#a2c9ff","on-secondary-fixed-variant":"#004881","secondary":"#0060a9","surface":"#f8f9ff","on-primary-fixed-variant":"#00487f","secondary-fixed":"#d3e4ff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"1.5rem","space-lg":"1.5rem","space-xl":"2rem","space-md":"1rem","margin":"1.5rem","gutter-lg":"2rem","space-sm":"0.5rem","margin-lg":"3rem","gutter-sm":"1rem","margin-sm":"1rem","space-xs":"0.25rem"},"fontFamily":{"body-lg":["Noto Sans"],"headline-lg":["Noto Sans"],"label-md":["Noto Sans"],"label-lg":["Noto Sans"],"headline-sm":["Noto Sans"],"label-sm":["Noto Sans"],"headline-md":["Noto Sans"],"body-sm":["Noto Sans"],"body-md":["Noto Sans"],"headline-xl-mobile":["Noto Sans"],"display-lg":["Noto Sans"],"headline-xl":["Noto Sans"],"display-lg-mobile":["Noto Sans"]},"fontSize":{"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"38px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"28px","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"500"}],"headline-md":["22px",{"lineHeight":"32px","fontWeight":"600"}],"body-sm":["14px",{"lineHeight":"21px","fontWeight":"400"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-xl-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg":["48px",{"lineHeight":"60px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-xl":["36px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"600"}],"display-lg-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}]}}}};</script></head><body class="bg-surface-container-lowest font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest border-b border-outline-variant shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-7xl mx-auto px-gutter-lg flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm" data-path="inicio" href="#"><img alt="AntartidaLabs Logo" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UyHu4qez_6Y3oZWE0ctUiKaz8zVHXRiMYuAfoKBG7mSGvLcFf3cR1ExqNNnoTMVdi9QclBY8oDpTPnxveKPPYeOlKWIDK4KYaUzz_gi_q2xzHEqs6SMKm4FuBT-Hca_Dx7cLNPLZDHd60bgpGWzPJ4-cZcqAd04d7rFX24d-n9sCPqN9L26vq83HH3_esvPRecMwFxT9JgYPm9WGAkIkWQiaWBDvlRJJjdGT1loshoIpb4Y8ABODIsosk"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">AntartidaLabs</span></a></div><div class="flex items-center gap-space-lg"><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="text-primary font-label-lg"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="propuesta" href="#propuesta">Propuesta</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="servicios" href="#servicios">Servicios</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="nosotros" href="#nosotros">Nosotros</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="contacto" href="#contacto">Contacto</a></nav><a class="inline-flex items-center justify-center min-h-[44px] px-space-lg rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg hover:bg-primary transition-colors focus:outline-none" data-path="contacto" href="#contacto">Conversar sobre el proyecto</a></div></div><div aria-label="Progreso de lectura" class="absolute bottom-0 left-0 right-0 h-1 bg-surface-container overflow-hidden" role="progressbar"><div class="h-full w-0 transition-all duration-200" id="reading-progress-bar" style="background: linear-gradient(90deg, #004275 0%, #0060a9 40%, #06e5e9 100%); width: 0%;"></div></div></header><main class="w-full pt-16 bg-surface-container-lowest"><aside aria-label="Recorrido institucional" class="fixed right-6 top-1/2 -translate-y-1/2 z-40 hidden lg:flex flex-col items-center bg-surface-container-lowest/85 backdrop-blur-md px-3 py-5 rounded-full border border-outline-variant shadow-lg transition-all duration-300" id="journey-tracker"><div class="text-[10px] uppercase font-bold tracking-wider text-primary mb-2 flex items-center justify-center"><span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">explore</span></div><div class="relative flex flex-col items-center gap-6"><div class="absolute top-2 bottom-2 w-0.5 bg-surface-container-high rounded-full -z-10"><div class="w-full bg-gradient-to-b from-primary via-secondary-container to-tertiary-fixed-dim rounded-full transition-all duration-300" id="journey-line-progress" style="height: 0%;"></div></div><a aria-label="Sección Inicio" class="journey-step group relative flex items-center justify-center" data-target="inicio" href="#inicio"><div class="w-3.5 h-3.5 rounded-full border-2 border-primary bg-primary shadow-sm transition-all duration-300 group-hover:scale-125" data-dot="inicio"></div><span class="pointer-events-none absolute right-7 px-2.5 py-1 rounded bg-inverse-surface text-inverse-on-surface font-label-sm text-label-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 shadow-md">01. Inicio</span></a><a aria-label="Sección Propuesta" class="journey-step group relative flex items-center justify-center" data-target="propuesta" href="#propuesta"><div class="w-3.5 h-3.5 rounded-full border-2 border-outline bg-surface-container-lowest shadow-sm transition-all duration-300 group-hover:scale-125" data-dot="propuesta"></div><span class="pointer-events-none absolute right-7 px-2.5 py-1 rounded bg-inverse-surface text-inverse-on-surface font-label-sm text-label-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 shadow-md">02. Propuesta</span></a><a aria-label="Sección Servicios" class="journey-step group relative flex items-center justify-center" data-target="servicios" href="#servicios"><div class="w-3.5 h-3.5 rounded-full border-2 border-outline bg-surface-container-lowest shadow-sm transition-all duration-300 group-hover:scale-125" data-dot="servicios"></div><span class="pointer-events-none absolute right-7 px-2.5 py-1 rounded bg-inverse-surface text-inverse-on-surface font-label-sm text-label-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 shadow-md">03. Servicios</span></a><a aria-label="Sección Nosotros" class="journey-step group relative flex items-center justify-center" data-target="nosotros" href="#nosotros"><div class="w-3.5 h-3.5 rounded-full border-2 border-outline bg-surface-container-lowest shadow-sm transition-all duration-300 group-hover:scale-125" data-dot="nosotros"></div><span class="pointer-events-none absolute right-7 px-2.5 py-1 rounded bg-inverse-surface text-inverse-on-surface font-label-sm text-label-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 shadow-md">04. Nosotros</span></a><a aria-label="Sección Contacto" class="journey-step group relative flex items-center justify-center" data-target="contacto" href="#contacto"><div class="w-3.5 h-3.5 rounded-full border-2 border-outline bg-surface-container-lowest shadow-sm transition-all duration-300 group-hover:scale-125" data-dot="contacto"></div><span class="pointer-events-none absolute right-7 px-2.5 py-1 rounded bg-inverse-surface text-inverse-on-surface font-label-sm text-label-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 shadow-md">05. Contacto</span></a></div><div class="mt-3 pt-2 border-t border-outline-variant/60 flex flex-col items-center"><span class="font-label-sm text-[11px] font-semibold text-primary" id="journey-percentage-text">0%</span></div></aside><div class="flex flex-col w-full text-on-surface bg-surface-container-lowest">
+<!-- SECCIÓN 1: HERO / INICIO -->
+<section class="w-full bg-surface-container-lowest py-16 relative overflow-hidden" id="inicio">
+<div class="max-w-[1200px] mx-auto px-gutter-lg">
+<div class="grid grid-cols-12 gap-space-xl items-center min-h-[560px]">
+<!-- Columna Izquierda (7 cols) -->
+<div class="col-span-12 lg:col-span-7 flex flex-col items-start gap-space-lg">
+<!-- Chip Superior -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">hub</span>
+<span class="tracking-wide uppercase font-semibold">INFRAESTRUCTURA ACADÉMICA SOBERANA</span>
+</div>
+<!-- Título Principal -->
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight leading-tight">
+            Capacidad tecnológica para investigar en IA
+          </h1>
+<!-- Párrafo Institucional Exacto -->
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed max-w-2xl">
+            AntartidaLabs aspira a acompañar a universidades y grupos científicos con capacidad tecnológica administrada para investigar en inteligencia artificial (IA). El modelo previsto reúne infraestructura, ingeniería de datos e IA y operación tecnológica, con alcance acordado y control institucional de los resultados.
+          </p>
+<!-- Bloque de Acciones / CTAs -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center justify-center min-h-[44px] px-6 py-3 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg transition-colors shadow-sm focus:outline-none" href="#contacto">
+              Conversar sobre el proyecto
+            </a>
+<a class="inline-flex items-center justify-center min-h-[44px] px-6 py-3 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-label-lg text-label-lg transition-colors focus:outline-none" href="#servicios">
+              Explorar servicios
+            </a>
+</div>
+<!-- Barra de Garantías / Métricas -->
+<div class="w-full pt-space-md mt-space-sm grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">verified_user</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Control Institucional 100%</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">memory</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">GPU Dedicada H100/A100</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">lock</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Soberanía de Datos</span>
+</div>
+</div>
+</div>
+<!-- Columna Derecha: Isotipo (5 cols) -->
+<div class="col-span-12 lg:col-span-5 flex justify-center items-center relative">
+<!-- Halo sutil polar -->
+<div class="absolute w-72 h-72 rounded-full bg-gradient-to-tr from-secondary-container/15 via-tertiary-fixed/10 to-transparent blur-2xl pointer-events-none"></div>
+<div class="relative w-[264px] h-[264px] rounded-2xl bg-surface-container-lowest p-4 shadow-xl flex items-center justify-center">
+<img alt="AntartidaLabs Logo Isotipo" class="w-[240px] h-[240px] object-contain mx-auto transition-transform hover:scale-105 duration-300" src="https://lh3.googleusercontent.com/aida/AEtjO1UyHu4qez_6Y3oZWE0ctUiKaz8zVHXRiMYuAfoKBG7mSGvLcFf3cR1ExqNNnoTMVdi9QclBY8oDpTPnxveKPPYeOlKWIDK4KYaUzz_gi_q2xzHEqs6SMKm4FuBT-Hca_Dx7cLNPLZDHd60bgpGWzPJ4-cZcqAd04d7rFX24d-n9sCPqN9L26vq83HH3_esvPRecMwFxT9JgYPm9WGAkIkWQiaWBDvlRJJjdGT1loshoIpb4Y8ABODIsosk"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 2: PROPUESTA Y MODELO -->
+<section class="w-full bg-surface-container-low py-20" id="propuesta">
+<div class="max-w-[1200px] mx-auto px-gutter-lg flex flex-col gap-space-xl">
+<!-- Encabezado de Sección -->
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">MODELO INTEGRADO</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Una capacidad de investigación integrada</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed pt-space-xs">
+          El núcleo <strong class="text-on-surface">AI Research LAB</strong> es un entorno modular concebido para desacoplar a los científicos del mantenimiento de sistemas, unificando clusters de cómputo, canalizaciones de datos y protocolos estrictos de gobernanza bajo control total de la institución académica.
+        </p>
+</div>
+<!-- Grid de 3 Columnas: Líneas Comerciales -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Tarjeta 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">science</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Laboratorios administrados de IA</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Infraestructura dedicada y administrada en entornos aislados de experimentación. Alojamiento de datos propios con aislamiento de redes y garantía de reproducibilidad metodológica.
+            </p>
+</div>
+<div class="pt-space-lg mt-space-md">
+<a class="font-label-lg text-label-lg text-primary hover:text-primary-container font-semibold inline-flex items-center gap-space-xs" data-service-select="AI Research LAB (Laboratorio administrado)" href="#contacto">
+              Consultar por AI Research LAB
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Tarjeta 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">account_tree</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Puesta en marcha e integración</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Despliegue ágil de clústeres computacionales, orquestadores Slurm/Kubernetes y pipelines de ingesta masiva adaptadas a los repositorios documentales y experimentales de su centro.
+            </p>
+</div>
+<div class="pt-space-lg mt-space-md">
+<a class="font-label-lg text-label-lg text-primary hover:text-primary-container font-semibold inline-flex items-center gap-space-xs" href="#servicios">
+              Ver Familias A y B
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Tarjeta 3 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">psychology</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Ingeniería y consultoría especializada</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Acompañamiento especializado en cuantización, optimización de pesos y parámetros, fine-tuning soberano y MLOps avanzado adaptado a estándares de publicación internacional.
+            </p>
+</div>
+<div class="pt-space-lg mt-space-md">
+<a class="font-label-lg text-label-lg text-primary hover:text-primary-container font-semibold inline-flex items-center gap-space-xs" href="#servicios">
+              Ver Familias C y F
+              <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Subsección: Flujo en 4 Pasos -->
+<div class="pt-space-lg flex flex-col gap-space-lg">
+<h3 class="font-headline-md text-headline-md text-on-surface">De la necesidad a una propuesta</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Paso 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs relative">
+<span class="font-headline-xl text-headline-xl text-primary font-bold opacity-30">01</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Conversar</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Diagnóstico inicial sin compromiso para conocer el estado y visión de la investigación.</p>
+</div>
+<!-- Paso 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs relative">
+<span class="font-headline-xl text-headline-xl text-primary font-bold opacity-30">02</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Relevar</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Análisis pormenorizado de requerimientos computacionales (GPUs, memoria, datasets y red).</p>
+</div>
+<!-- Paso 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs relative">
+<span class="font-headline-xl text-headline-xl text-primary font-bold opacity-30">03</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Acordar</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Definición clara de alcance, convenios marco, entregables verificables y límites de acceso.</p>
+</div>
+<!-- Paso 4 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs relative">
+<span class="font-headline-xl text-headline-xl text-primary font-bold opacity-30">04</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Implementar</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Puesta a punto de los entornos, monitoreo continuo y soporte técnico a los investigadores.</p>
+</div>
+</div>
+</div>
+<!-- Banner Informativo -->
+<div class="p-space-lg rounded-xl bg-surface-container flex items-start gap-space-md">
+<span class="material-symbols-outlined text-primary text-[28px] shrink-0">info</span>
+<div class="flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Cotización modular y a medida</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Las asignaciones se configuran estrictamente según las necesidades del proyecto científico y la disponibilidad de infraestructura. No existen cobros en línea ni planes comerciales rígidos; cada acuerdo refleja los compromisos académicos y presupuestarios acordados con cada entidad.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 3: CATÁLOGO DE SERVICIOS -->
+<section class="w-full bg-surface-container-lowest py-20" id="servicios">
+<div class="max-w-[1200px] mx-auto px-gutter-lg flex flex-col gap-space-xl">
+<!-- Encabezado -->
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">PORTAFOLIO DE CAPACIDADES</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Servicios para cada necesidad de investigación</h2>
+</div>
+<!-- Recuadro Informativo de Catálogo -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex items-center gap-space-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[20px]">assignment</span>
+<p class="font-body-sm text-body-sm">
+          Este catálogo describe el modelo previsto. Cada propuesta confirma disponibilidad, recursos, entregables, dependencias y condiciones operativas.
+        </p>
+</div>
+<!-- Filtros / Pestañas Horizontales -->
+<div class="flex flex-wrap gap-space-xs pb-space-sm overflow-x-auto" id="service-filters">
+<button class="filter-btn px-4 py-2 rounded-full font-label-md text-label-md bg-primary-container text-on-primary font-semibold transition-all" data-filter="all">
+          Todas las familias
+        </button>
+<button class="filter-btn px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all" data-filter="A">
+          Familia A: Inicio e integración
+        </button>
+<button class="filter-btn px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all" data-filter="B">
+          Familia B: Infraestructura y plataforma
+        </button>
+<button class="filter-btn px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all" data-filter="C">
+          Familia C: Datos e ingeniería
+        </button>
+<button class="filter-btn px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all" data-filter="D">
+          Familia D: Experimentación y MLOps
+        </button>
+<button class="filter-btn px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all" data-filter="E">
+          Familia E: Operación y seguridad
+        </button>
+<button class="filter-btn px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all" data-filter="F">
+          Familia F: Consultoría especializada
+        </button>
+</div>
+<!-- Grid de Servicios (3 cols Desktop) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg" id="services-grid">
+<!-- Tarjeta Servicio 1 (Familia A) -->
+<div class="service-card bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow" data-family="A">
+<div class="flex flex-col gap-space-sm">
+<span class="inline-flex w-fit px-space-sm py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-semibold">Familia A</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Despliegue de Entorno Base para Grupos</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Configuración inicial de entornos JupyterHub multi-usuario, control de acceso unificado con LDAP institucional y aprovisionamiento ágil para laboratorios de cátedra o becarios.
+            </p>
+<!-- Panel Detalle Desplegable -->
+<div class="accordion-content hidden pt-space-sm flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<div class=""><strong class="text-on-surface">Características:</strong> Contenedores Docker preconfigurados con PyTorch, TensorFlow y Jax.</div>
+<div class=""><strong class="text-on-surface">Beneficios:</strong> Inicio de proyectos en menos de 48 horas sin fricción de configuración.</div>
+<div class=""><strong class="text-on-surface">Para quién:</strong> Grupos de investigación recién conformados y proyectos de tesis.</div>
+<div class=""><strong class="text-on-surface">Entregables:</strong> URL institucional segura y panel administrativo de asignación.</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between gap-space-xs">
+<button class="toggle-detail-btn font-label-md text-label-md text-on-surface-variant hover:text-on-surface inline-flex items-center gap-1 focus:outline-none">
+<span class="">Ver detalle</span>
+<span class="material-symbols-outlined text-[16px] transition-transform duration-200">expand_more</span>
+</button>
+<a class="px-4 py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-colors" data-service-select="Familia A: Inicio e integración" href="#contacto">
+              Solicitar info
+            </a>
+</div>
+</div>
+<!-- Tarjeta Servicio 2 (Familia B) -->
+<div class="service-card bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow" data-family="B">
+<div class="flex flex-col gap-space-sm">
+<span class="inline-flex w-fit px-space-sm py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-semibold">Familia B</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Provisión y Gestión de Clúster GPU Dedicado</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Cómputo acelerado de alto rendimiento con nodos NVIDIA H100 y A100. Orquestación mediante Slurm para asignación de colas y almacenamiento ultra-rápido en NVMe.
+            </p>
+<div class="accordion-content hidden pt-space-sm flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<div class=""><strong class="text-on-surface">Características:</strong> Interconexión InfiniBand de baja latencia y virtualización de particiones.</div>
+<div class=""><strong class="text-on-surface">Beneficios:</strong> Reducción dramática en tiempos de entrenamiento de modelos masivos.</div>
+<div class=""><strong class="text-on-surface">Para quién:</strong> Laboratorios con cargas intensivas de Deep Learning y visión artificial.</div>
+<div class=""><strong class="text-on-surface">Entregables:</strong> Acceso SSH/Slurm dedicado, telemetría y dashboard de consumo en tiempo real.</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between gap-space-xs">
+<button class="toggle-detail-btn font-label-md text-label-md text-on-surface-variant hover:text-on-surface inline-flex items-center gap-1 focus:outline-none">
+<span class="">Ver detalle</span>
+<span class="material-symbols-outlined text-[16px] transition-transform duration-200">expand_more</span>
+</button>
+<a class="px-4 py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-colors" data-service-select="Familia B: Clústeres GPU dedicados" href="#contacto">
+              Solicitar info
+            </a>
+</div>
+</div>
+<!-- Tarjeta Servicio 3 (Familia C) -->
+<div class="service-card bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow" data-family="C">
+<div class="flex flex-col gap-space-sm">
+<span class="inline-flex w-fit px-space-sm py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-semibold">Familia C</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Curaduría y Canalizaciones de Datos de Investigación</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Estructuración de lagos de datos con versionado de datos (DVC), anonimización para experimentación biomédica o social, y pipelines automatizadas de extracción y tokenización.
+            </p>
+<div class="accordion-content hidden pt-space-sm flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<div class=""><strong class="text-on-surface">Características:</strong> Cumplimiento estricto con protocolos éticos institucionales y leyes de datos.</div>
+<div class=""><strong class="text-on-surface">Beneficios:</strong> Repositorios reproducibles y listos para inferencia y reentrenamiento.</div>
+<div class=""><strong class="text-on-surface">Para quién:</strong> Proyectos que manipulan registros clínicos, corpora de lenguaje o imágenes satelitales.</div>
+<div class=""><strong class="text-on-surface">Entregables:</strong> Almacenamiento S3 compatible, scripts de preprocesamiento y auditoría.</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between gap-space-xs">
+<button class="toggle-detail-btn font-label-md text-label-md text-on-surface-variant hover:text-on-surface inline-flex items-center gap-1 focus:outline-none">
+<span class="">Ver detalle</span>
+<span class="material-symbols-outlined text-[16px] transition-transform duration-200">expand_more</span>
+</button>
+<a class="px-4 py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-colors" data-service-select="Familia C: Datos e ingeniería" href="#contacto">
+              Solicitar info
+            </a>
+</div>
+</div>
+<!-- Tarjeta Servicio 4 (Familia D) -->
+<div class="service-card bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow" data-family="D">
+<div class="flex flex-col gap-space-sm">
+<span class="inline-flex w-fit px-space-sm py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-semibold">Familia D</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Plataforma MLOps y Registro de Experimentos</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Integración de MLflow, Weights &amp; Biases privado y repositorios de modelos para asegurar la trazabilidad de hiperparámetros, pesos resultantes y métricas de convergencia.
+            </p>
+<div class="accordion-content hidden pt-space-sm flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<div class=""><strong class="text-on-surface">Características:</strong> Servidor privado de tracking y registro central de modelos auditado.</div>
+<div class=""><strong class="text-on-surface">Beneficios:</strong> Reproducibilidad exacta exigida por comités de revisión por pares.</div>
+<div class=""><strong class="text-on-surface">Para quién:</strong> Equipos que preparan papers para conferencias top (NeurIPS, ICML, CVPR).</div>
+<div class=""><strong class="text-on-surface">Entregables:</strong> Entorno de experimentación operativo con exportación de reportes automáticos.</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between gap-space-xs">
+<button class="toggle-detail-btn font-label-md text-label-md text-on-surface-variant hover:text-on-surface inline-flex items-center gap-1 focus:outline-none">
+<span class="">Ver detalle</span>
+<span class="material-symbols-outlined text-[16px] transition-transform duration-200">expand_more</span>
+</button>
+<a class="px-4 py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-colors" data-service-select="Familia D: MLOps y Experimentación" href="#contacto">
+              Solicitar info
+            </a>
+</div>
+</div>
+<!-- Tarjeta Servicio 5 (Familia E) -->
+<div class="service-card bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow" data-family="E">
+<div class="flex flex-col gap-space-sm">
+<span class="inline-flex w-fit px-space-sm py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-semibold">Familia E</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Administración de Seguridad, Redes y Soporte 24/7</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Cuidado operacional del stack tecnológico: parchado de seguridad de librerías CUDA, aislamiento de red con VPN institucional, copias de seguridad inmutables y monitoreo preventivo.
+            </p>
+<div class="accordion-content hidden pt-space-sm flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<div class=""><strong class="text-on-surface">Características:</strong> Soporte de incidentes en tiempo real y backups georreferenciados.</div>
+<div class=""><strong class="text-on-surface">Beneficios:</strong> Cero pérdida de días de cómputo por caídas o fallos de disco.</div>
+<div class=""><strong class="text-on-surface">Para quién:</strong> Centros de investigación que carecen de administradores de sistemas dedicados.</div>
+<div class=""><strong class="text-on-surface">Entregables:</strong> Acuerdos de nivel de servicio (SLA) institucional y reportes periódicos de salud.</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between gap-space-xs">
+<button class="toggle-detail-btn font-label-md text-label-md text-on-surface-variant hover:text-on-surface inline-flex items-center gap-1 focus:outline-none">
+<span class="">Ver detalle</span>
+<span class="material-symbols-outlined text-[16px] transition-transform duration-200">expand_more</span>
+</button>
+<a class="px-4 py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-colors" data-service-select="Familia E: Seguridad y Soporte" href="#contacto">
+              Solicitar info
+            </a>
+</div>
+</div>
+<!-- Tarjeta Servicio 6 (Familia F) -->
+<div class="service-card bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow" data-family="F">
+<div class="flex flex-col gap-space-sm">
+<span class="inline-flex w-fit px-space-sm py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-semibold">Familia F</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Asesoría Técnica en Fine-Tuning y Modelos Soberanos</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Acompañamiento por ingenieros de IA en técnicas avanzadas de ajuste eficiente (LoRA, QLoRA), paralelismo de modelo con DeepSpeed/Megatron y compilación de grafos.
+            </p>
+<div class="accordion-content hidden pt-space-sm flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<div class=""><strong class="text-on-surface">Características:</strong> Sesiones directas de code-review y diagnóstico de cuellos de botella en GPU.</div>
+<div class=""><strong class="text-on-surface">Beneficios:</strong> Ahorro sustancial de VRAM y maximización de TFLOPS alcanzados.</div>
+<div class=""><strong class="text-on-surface">Para quién:</strong> Investigadores entrenando modelos de lenguaje o bioinformáticos a escala.</div>
+<div class=""><strong class="text-on-surface">Entregables:</strong> Repositorio Git optimizado con configuraciones de benchmarking.</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between gap-space-xs">
+<button class="toggle-detail-btn font-label-md text-label-md text-on-surface-variant hover:text-on-surface inline-flex items-center gap-1 focus:outline-none">
+<span class="">Ver detalle</span>
+<span class="material-symbols-outlined text-[16px] transition-transform duration-200">expand_more</span>
+</button>
+<a class="px-4 py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-colors" data-service-select="Familia F: Consultoría y Fine-Tuning" href="#contacto">
+              Solicitar info
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 4: NOSOTROS -->
+<section class="w-full bg-surface-container-low py-20" id="nosotros">
+<div class="max-w-[1200px] mx-auto px-gutter-lg flex flex-col gap-space-xl">
+<!-- Encabezado -->
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">IDENTIDAD CIENTÍFICA</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Investigación primero</h2>
+</div>
+<!-- Dos Bloques Destacados (2 Cols) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[24px]">school</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">A quién queremos acompañar</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Universidades públicas y privadas, institutos de CONICET, centros de doble dependencia y grupos científicos que requieren infraestructura tecnológica avanzada sin diluir sus recursos humanos en la compleja administración física de servidores, drivers y redes.
+          </p>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[24px]">visibility</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Nuestra visión</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Facilitar soberanía tecnológica e infraestructura de cómputo de clase mundial para la producción académica regional, garantizando que el conocimiento, las patentes y los avances pertenezcan plenamente a la comunidad científica y a sus instituciones.
+          </p>
+</div>
+</div>
+<!-- Cuadrícula de 6 Pilares Institucionales -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md pt-space-md">
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-primary font-bold">01</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Investigación primero</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">La ciencia, la hipótesis y el rigor metodológico marcan las prioridades técnicas del despliegue.</p>
+</div>
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-primary font-bold">02</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Socio tecnológico integral</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hardware, orquestación, librerías e ingeniería con un único interlocutor especializado.</p>
+</div>
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-primary font-bold">03</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Laboratorio como servicio</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Acceso elástico y bajo demanda sin la carga burocrática del mantenimiento físico de centros de datos.</p>
+</div>
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-primary font-bold">04</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Confianza y control institucional</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Datos, pesos de modelos y propiedad intelectual son 100% de la institución y del investigador.</p>
+</div>
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-primary font-bold">05</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Colaboración con universidades</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Capacitación y transferencia activa de buenas prácticas hacia los investigadores y técnicos locales.</p>
+</div>
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-primary font-bold">06</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Crecimiento responsable</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Escalabilidad presupuestaria sostenible y optimización de la eficiencia energética del cómputo.</p>
+</div>
+</div>
+<!-- Bloque de Cierre Institucional -->
+<div class="p-space-lg rounded-xl bg-surface-container flex flex-col sm:flex-row items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">¿Iniciamos una evaluación técnica?</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Coordinemos una conversación preliminar con los directores de tu laboratorio para mapear necesidades inmediatas.</p>
+</div>
+<a class="shrink-0 inline-flex items-center justify-center min-h-[44px] px-6 py-3 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg transition-colors shadow-sm focus:outline-none" href="#contacto">
+          Conversar sobre el proyecto
+        </a>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 5: FORMULARIO DE CONTACTO -->
+<section class="w-full bg-surface-container-lowest py-20" id="contacto">
+<div class="max-w-[760px] mx-auto px-gutter-lg">
+<div class="bg-surface-container-lowest p-8 sm:p-10 rounded-2xl shadow-xl flex flex-col gap-space-lg">
+<!-- Encabezado del Formulario -->
+<div class="flex flex-col gap-space-xs text-center sm:text-left">
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Conversemos sobre tu proyecto</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Contanos qué necesitás investigar y qué recursos tenés disponibles. Evaluaremos el alcance y las condiciones que podrían incorporarse a una propuesta.
+          </p>
+</div>
+<!-- Formulario -->
+<form class="flex flex-col gap-space-md" id="institutional-contact-form" onsubmit="event.preventDefault(); document.getElementById('form-feedback').classList.remove('hidden');">
+<!-- Fila 1: Nombre y Apellido / Institución -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="contact-name">Nombre y apellido *</label>
+<input class="w-full px-3 py-2.5 rounded bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-low transition-colors shadow-sm" id="contact-name" placeholder="Dra. Mariana López" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="contact-inst">Empresa / Institución</label>
+<input class="w-full px-3 py-2.5 rounded bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-low transition-colors shadow-sm" id="contact-inst" placeholder="Universidad Nacional / Instituto CONICET" type="text"/>
+</div>
+</div>
+<!-- Fila 2: Correo / Servicio -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="contact-email">Correo electrónico institucional *</label>
+<input class="w-full px-3 py-2.5 rounded bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-low transition-colors shadow-sm" id="contact-email" placeholder="mlopez@conicet.gov.ar" required="" type="email"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="contact-service">Producto o servicio de interés *</label>
+<select class="w-full px-3 py-2.5 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-low transition-colors shadow-sm" id="contact-service" required="">
+<option value="Consulta general">Consulta general</option>
+<option value="AI Research LAB (Laboratorio administrado)">AI Research LAB (Laboratorio administrado)</option>
+<option value="Familia A: Inicio e integración">Familia A: Inicio e integración</option>
+<option value="Familia B: Clústeres GPU dedicados">Familia B: Clústeres GPU dedicados</option>
+<option value="Familia C: Datos e ingeniería">Familia C: Datos e ingeniería</option>
+<option value="Familia D: MLOps y Experimentación">Familia D: MLOps y Experimentación</option>
+<option value="Familia E: Seguridad y Soporte">Familia E: Seguridad y Soporte</option>
+<option value="Familia F: Consultoría y Fine-Tuning">Familia F: Consultoría y Fine-Tuning</option>
+</select>
+</div>
+</div>
+<!-- Mensaje -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="contact-message">Mensaje *</label>
+<textarea class="w-full px-3 py-2.5 rounded bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-low transition-colors shadow-sm" id="contact-message" placeholder="Describe los requerimientos del grupo de investigación..." required="" rows="4"></textarea>
+<span class="font-label-sm text-label-sm text-outline-variant">
+              Contanos el objetivo de investigación y tu necesidad tecnológica. No incluyas contraseñas, datos sensibles ni datasets.
+            </span>
+</div>
+<!-- Bloque Política y Privacidad -->
+<div class="p-space-sm rounded bg-surface-container-low flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">security</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant leading-relaxed">
+<strong class="text-on-surface">USO DE TUS DATOS:</strong> Este formulario genera una notificación de correo institucional y no almacena registros en bases de datos comerciales. No realizamos envíos de marketing ni cesión a terceros.
+            </p>
+</div>
+<!-- Botón de Envío -->
+<button class="w-full mt-space-xs py-3.5 px-6 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg font-semibold transition-colors shadow-sm focus:outline-none cursor-pointer" type="submit">
+            Enviar consulta
+          </button>
+<!-- Feedback de envío -->
+<div class="hidden p-space-md rounded-lg bg-surface-container text-primary font-body-sm text-body-sm flex items-center gap-space-xs" id="form-feedback">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span class="">Mensaje registrado. Un responsable institucional de AntartidaLabs responderá a la brevedad.</span>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 6: INFORMATIVA ADICIONAL (USO DE DATOS) -->
+<section class="w-full bg-surface-container-low py-16" id="datos">
+<div class="max-w-[1200px] mx-auto px-gutter-lg flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[24px]">policy</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Compromiso Institucional de Tratamiento de Datos</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed max-w-4xl">
+        En cumplimiento con los estándares éticos universitarios y de investigación pública, AntartidaLabs opera bajo el principio de estricta soberanía de datos científicos. Los datos procesados en nuestros clústeres no se emplean bajo ninguna circunstancia para el entrenamiento de modelos de terceros ni son transferidos fuera de las jurisdicciones y servidores pactados. La propiedad intelectual, los pesos derivados de los entrenamientos y las publicaciones resultantes son patrimonio inalienable del centro de investigación solicitante.
+      </p>
+</div>
+</section>
+</div>
+<script>
+  // Micro-interacción: Acordeones de Detalle de Servicios
+  document.querySelectorAll('.toggle-detail-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const card = button.closest('.service-card');
+      const accordion = card.querySelector('.accordion-content');
+      const icon = button.querySelector('.material-symbols-outlined');
+      const textSpan = button.querySelector('span:first-child');
+      
+      const isHidden = accordion.classList.contains('hidden');
+      if (isHidden) {
+        accordion.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+        textSpan.textContent = 'Ocultar detalle';
+      } else {
+        accordion.classList.add('hidden');
+        icon.classList.remove('rotate-180');
+        textSpan.textContent = 'Ver detalle';
+      }
+    });
+  });
+
+  // Micro-interacción: Filtros de Familias
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const serviceCards = document.querySelectorAll('.service-card');
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.getAttribute('data-filter');
+
+      // Actualizar estilo de botones
+      filterButtons.forEach(b => {
+        b.classList.remove('bg-primary-container', 'text-on-primary', 'font-semibold');
+        b.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      btn.classList.add('bg-primary-container', 'text-on-primary', 'font-semibold');
+      btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+
+      // Filtrar tarjetas
+      serviceCards.forEach(card => {
+        const family = card.getAttribute('data-family');
+        if (filter === 'all' || family === filter) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+
+  // Micro-interacción: Enlaces que preseleccionan el servicio en el Formulario
+  document.querySelectorAll('[data-service-select]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      const serviceName = link.getAttribute('data-service-select');
+      const selectElement = document.getElementById('contact-service');
+      if (selectElement && serviceName) {
+        for (let i = 0; i < selectElement.options.length; i++) {
+          if (selectElement.options[i].value === serviceName) {
+            selectElement.selectedIndex = i;
+            break;
+          }
+        }
+      }
+    });
+  });
+</script><div class="hidden" id="journey-tracker-script-carrier"><script>window.addEventListener('DOMContentLoaded', () => { const progressBar = document.getElementById('reading-progress-bar'); const journeyLine = document.getElementById('journey-line-progress'); const percentageText = document.getElementById('journey-percentage-text'); const sections = ['inicio', 'propuesta', 'servicios', 'nosotros', 'contacto']; const sectionElements = sections.map(id => document.getElementById(id)).filter(Boolean); const updateProgress = () => { const totalHeight = document.documentElement.scrollHeight - window.innerHeight; const scrolled = Math.max(0, window.scrollY); const progressRatio = totalHeight > 0 ? Math.min(1, Math.max(0, scrolled / totalHeight)) : 0; const pct = Math.round(progressRatio * 100); if (progressBar) progressBar.style.width = pct + '%'; if (journeyLine) journeyLine.style.height = pct + '%'; if (percentageText) percentageText.textContent = pct + '%'; const scrollMid = window.scrollY + (window.innerHeight * 0.35); let activeSection = sections[0]; sections.forEach(id => { const el = document.getElementById(id); if (el && el.offsetTop <= scrollMid) { activeSection = id; } }); const activeIndex = sections.indexOf(activeSection); sections.forEach((id, index) => { const dot = document.querySelector('[data-dot="' + id + '"]'); if (!dot) return; if (index < activeIndex) { dot.className = 'w-3.5 h-3.5 rounded-full border-2 border-secondary-container bg-secondary-container shadow-sm transition-all duration-300 group-hover:scale-125'; } else if (index === activeIndex) { dot.className = 'w-3.5 h-3.5 rounded-full border-2 border-tertiary-fixed-dim bg-primary ring-2 ring-primary/40 shadow-md transition-all duration-300 group-hover:scale-125'; } else { dot.className = 'w-3.5 h-3.5 rounded-full border-2 border-outline bg-surface-container-lowest shadow-sm transition-all duration-300 group-hover:scale-125'; } }); }; window.addEventListener('scroll', updateProgress, { passive: true }); updateProgress(); });</script></div></main><footer class="w-full bg-on-surface text-inverse-on-surface border-t border-inverse-surface"><div class="max-w-7xl mx-auto px-gutter-lg py-margin-lg"><div class="flex flex-col md:flex-row md:items-start justify-between gap-space-xl pb-margin-lg border-b border-outline/30"><div class="max-w-md"><div class="flex items-center gap-space-sm mb-space-sm"><img alt="AntartidaLabs Logo" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UyHu4qez_6Y3oZWE0ctUiKaz8zVHXRiMYuAfoKBG7mSGvLcFf3cR1ExqNNnoTMVdi9QclBY8oDpTPnxveKPPYeOlKWIDK4KYaUzz_gi_q2xzHEqs6SMKm4FuBT-Hca_Dx7cLNPLZDHd60bgpGWzPJ4-cZcqAd04d7rFX24d-n9sCPqN9L26vq83HH3_esvPRecMwFxT9JgYPm9WGAkIkWQiaWBDvlRJJjdGT1loshoIpb4Y8ABODIsosk"/><span class="font-headline-sm text-headline-sm text-on-primary tracking-tight">AntartidaLabs</span></div><p class="font-body-sm text-body-sm text-outline-variant leading-relaxed">Computación gestionada y soberana para centros científicos y universidades de investigación en inteligencia artificial.</p></div><div class="flex flex-wrap gap-space-xl font-label-lg text-label-lg text-outline-variant"><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md uppercase tracking-wider text-on-primary">Plataforma</span><a class="hover:text-on-primary transition-colors" data-path="inicio" href="#">Inicio</a><a class="hover:text-on-primary transition-colors" data-path="servicios" href="#servicios">Servicios</a><a class="hover:text-on-primary transition-colors" data-path="propuesta" href="#propuesta">Propuesta</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md uppercase tracking-wider text-on-primary">Institución</span><a class="hover:text-on-primary transition-colors" data-path="nosotros" href="#nosotros">Nosotros</a><a class="hover:text-on-primary transition-colors" data-path="contacto" href="#contacto">Contacto</a><a class="hover:text-on-primary transition-colors" data-path="uso-de-tus-datos" href="#datos">Uso de tus datos</a></div></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md text-outline-variant font-label-sm text-label-sm"><span class="">© 2024 AntartidaLabs. Todos los derechos reservados.</span><div class="flex items-center gap-space-md"><span class="">Soberanía de Cómputo Académico</span><span class="inline-block w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span><span class="">Red Nacional de IA</span></div></div></div></footer>
+</body></html>

@@ -1,0 +1,25 @@
+{
+  "name": "antartidalabs-web",
+  "version": "2.0.0",
+  "description": "Sitio institucional y comercial de AntartidaLabs con backend ligero de contacto",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "py": "python3 server.py"
+  },
+  "keywords": [
+    "antartidalabs",
+    "ai",
+    "hpc",
+    "academic-research"
+  ],
+  "author": "AntartidaLabs",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.13"
+  }
+}
