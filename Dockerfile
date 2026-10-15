@@ -16,15 +16,11 @@ COPY server.py /app/server.py
 # Switch to non-root user
 USER antartida
 
-# Expose server port
-EXPOSE 3000
+# Expose ports (3000 default, 80 compatible)
+EXPOSE 3000 80
 
 ENV PORT=3000 \
     PYTHONUNBUFFERED=1
-
-# Healthcheck
-HEALTHCHECK --interval=30s --timeout=5s --start-period=5s --retries=3 \
-  CMD wget --no-verbose --tries=1 --spider http://localhost:3000/contacto/contexto || exit 1
 
 # Start server
 CMD ["python3", "server.py"]
