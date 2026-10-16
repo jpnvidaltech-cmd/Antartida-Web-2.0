@@ -170,6 +170,12 @@ class AntartidaRequestHandler(SimpleHTTPRequestHandler):
         self.send_header('X-Content-Type-Options', 'nosniff')
         self.send_header('X-Frame-Options', 'SAMEORIGIN')
         self.send_header('Referrer-Policy', 'strict-origin-when-cross-origin')
+        
+        # Ensure fresh assets during updates on mobile browsers (Safari / Chrome)
+        clean_path = self.path.split('?')[0]
+        if clean_path.endswith('.html') or clean_path == '/' or clean_path.endswith('.css') or clean_path.endswith('.js'):
+            self.send_header('Cache-Control', 'no-cache, must-revalidate')
+            
         super().end_headers()
 
     def do_GET(self):
