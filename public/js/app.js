@@ -20,7 +20,7 @@ function initNavigation() {
   const sections = ['inicio', 'propuesta', 'servicios', 'nosotros', 'contacto'];
   const mobileToggle = document.getElementById('mobile-nav-toggle');
   const mobileDrawer = document.getElementById('mobile-menu-drawer');
-  const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+  const mobileLinks = document.querySelectorAll('.mobile-nav-link, .mobile-nav-link-cta');
 
   // Mobile menu toggle
   if (mobileToggle && mobileDrawer) {
