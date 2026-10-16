@@ -204,6 +204,13 @@ function initServiceCards() {
     btn.addEventListener('click', (e) => {
       filterButtons.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
+      
+      // Auto-center active button in horizontal scroll strip on mobile
+      try {
+        btn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+      } catch (err) {
+        // Fallback for older browsers
+      }
     });
   });
 }

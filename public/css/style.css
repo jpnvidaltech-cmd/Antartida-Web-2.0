@@ -824,35 +824,98 @@ section {
   background-color: #ffffff;
 }
 
+.family-nav-wrapper {
+  margin: 18px 0 28px;
+  width: 100%;
+  position: relative;
+}
+
 .family-nav {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   gap: 8px;
-  margin: 24px 0 32px;
+  margin: 0;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 4px 2px 10px;
+}
+
+.family-nav::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .family-nav {
+    flex-wrap: wrap;
+    overflow-x: visible;
+    padding-bottom: 0;
+  }
 }
 
 .family-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   padding: 8px 16px;
   border-radius: var(--radius-full);
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 13.5px;
+  font-weight: 500;
   background-color: var(--color-surface-dim);
   border: 1px solid var(--color-outline-variant);
-  color: var(--color-muted);
+  color: var(--color-text);
   cursor: pointer;
-  transition: all var(--transition-fast);
+  white-space: nowrap;
+  flex-shrink: 0;
   text-decoration: none;
+  transition: all var(--transition-fast);
 }
 
 .family-filter-btn:hover {
   background-color: var(--color-surface-high);
-  color: var(--color-text);
+  border-color: var(--color-outline);
+  color: var(--color-primary);
 }
 
 .family-filter-btn.active {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
   color: #ffffff;
+  font-weight: 600;
+}
+
+.family-filter-btn .family-letter {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.family-filter-btn.active .family-letter {
+  color: #ffffff;
+}
+
+.family-filter-btn .family-sep {
+  opacity: 0.5;
+}
+
+.family-count-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: var(--radius-full);
+  font-size: 11.5px;
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.24);
+  color: #ffffff;
+  line-height: 1;
+}
+
+.family-filter-btn:not(.active) .family-count-badge {
+  background-color: var(--color-surface-high);
+  color: var(--color-muted);
 }
 
 /* Family Groups */
@@ -953,13 +1016,17 @@ section {
 
 .service-chip {
   align-self: flex-start;
-  font-size: 11px;
-  font-weight: 600;
-  padding: 2px 8px;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 3px 10px;
   border-radius: var(--radius-full);
   background-color: var(--color-surface-dim);
   color: var(--color-primary);
   border: 1px solid var(--color-outline-variant);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .service-title {

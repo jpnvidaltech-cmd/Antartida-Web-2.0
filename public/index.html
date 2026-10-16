@@ -17,7 +17,7 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <!-- Custom Stylesheet with CSS Tokens & Variables -->
-  <link rel="stylesheet" href="/css/style.css?v=2.2">
+  <link rel="stylesheet" href="/css/style.css?v=2.3">
 </head>
 <body>
 
@@ -299,14 +299,32 @@
           </p>
         </div>
 
-        <!-- Índice de Familias -->
-        <div class="family-nav" aria-label="Índice de familias de servicios">
-          <a href="#familia-a" class="family-filter-btn">Familia A: Inicio e integración</a>
-          <a href="#familia-b" class="family-filter-btn">Familia B: Infraestructura y plataforma</a>
-          <a href="#familia-c" class="family-filter-btn">Familia C: Datos e ingeniería</a>
-          <a href="#familia-d" class="family-filter-btn">Familia D: Experimentación y MLOps</a>
-          <a href="#familia-e" class="family-filter-btn">Familia E: Operación y seguridad</a>
-          <a href="#familia-f" class="family-filter-btn">Familia F: Consultoría especializada</a>
+        <!-- Barra de Familias de Servicios (Scroll horizontal en móvil) -->
+        <div class="family-nav-wrapper">
+          <nav class="family-nav" aria-label="Familias de servicios">
+            <a href="#servicios" class="family-filter-btn active" data-family="all">
+              <span>Todas las Familias</span>
+              <span class="family-count-badge">6</span>
+            </a>
+            <a href="#familia-a" class="family-filter-btn" data-family="familia-a">
+              <span class="family-letter">A</span> <span class="family-sep">·</span> <span>Inicio e integración</span>
+            </a>
+            <a href="#familia-b" class="family-filter-btn" data-family="familia-b">
+              <span class="family-letter">B</span> <span class="family-sep">·</span> <span>Infraestructura y plataforma</span>
+            </a>
+            <a href="#familia-c" class="family-filter-btn" data-family="familia-c">
+              <span class="family-letter">C</span> <span class="family-sep">·</span> <span>Datos e ingeniería</span>
+            </a>
+            <a href="#familia-d" class="family-filter-btn" data-family="familia-d">
+              <span class="family-letter">D</span> <span class="family-sep">·</span> <span>Experimentación y MLOps</span>
+            </a>
+            <a href="#familia-e" class="family-filter-btn" data-family="familia-e">
+              <span class="family-letter">E</span> <span class="family-sep">·</span> <span>Operación y seguridad</span>
+            </a>
+            <a href="#familia-f" class="family-filter-btn" data-family="familia-f">
+              <span class="family-letter">F</span> <span class="family-sep">·</span> <span>Consultoría especializada</span>
+            </a>
+          </nav>
         </div>
 
         <!-- FAMILIA A: INICIO E INTEGRACIÓN (01 - 03) -->
@@ -321,7 +339,7 @@
             <!-- Servicio 01 -->
             <article class="service-card" id="servicio-01">
               <div class="service-card-header">
-                <span class="service-chip">ID 01</span>
+                <span class="service-chip">A-1</span>
                 <h4 class="service-title">Research Launch</h4>
                 <p class="service-description">Preparación tecnológica de un nuevo proyecto de IA.</p>
                 
@@ -348,7 +366,7 @@
             <!-- Servicio 02 -->
             <article class="service-card" id="servicio-02">
               <div class="service-card-header">
-                <span class="service-chip">ID 02</span>
+                <span class="service-chip">A-2</span>
                 <h4 class="service-title">Research Integration</h4>
                 <p class="service-description">Integración de proveedores, infraestructura y plataformas de un laboratorio existente.</p>
                 
@@ -375,7 +393,7 @@
             <!-- Servicio 03 -->
             <article class="service-card" id="servicio-03">
               <div class="service-card-header">
-                <span class="service-chip">ID 03</span>
+                <span class="service-chip">A-3</span>
                 <h4 class="service-title">One Stop Research IT</h4>
                 <p class="service-description">Coordinación operativa de proveedores mediante un interlocutor tecnológico.</p>
                 
@@ -414,7 +432,7 @@
             <!-- Servicio 04 -->
             <article class="service-card" id="servicio-04">
               <div class="service-card-header">
-                <span class="service-chip">ID 04</span>
+                <span class="service-chip">B-1</span>
                 <h4 class="service-title">Research Workspace</h4>
                 <p class="service-description">Entornos de trabajo administrados para investigadores y desarrolladores.</p>
                 
@@ -441,7 +459,7 @@
             <!-- Servicio 05 -->
             <article class="service-card" id="servicio-05">
               <div class="service-card-header">
-                <span class="service-chip">ID 05</span>
+                <span class="service-chip">B-2</span>
                 <h4 class="service-title">GPU Compute</h4>
                 <p class="service-description">Aprovisionamiento y gestión de GPU externas como capacidad de investigación administrada.</p>
                 
@@ -468,7 +486,7 @@
             <!-- Servicio 06 -->
             <article class="service-card" id="servicio-06">
               <div class="service-card-header">
-                <span class="service-chip">ID 06</span>
+                <span class="service-chip">B-3</span>
                 <h4 class="service-title">Research Storage</h4>
                 <p class="service-description">Almacenamiento y protección de datasets, modelos y artefactos.</p>
                 
@@ -495,7 +513,7 @@
             <!-- Servicio 07 -->
             <article class="service-card" id="servicio-07">
               <div class="service-card-header">
-                <span class="service-chip">ID 07</span>
+                <span class="service-chip">B-4</span>
                 <h4 class="service-title">Hybrid Research</h4>
                 <p class="service-description">Integración con infraestructura, identidad y cómputo propios de la institución.</p>
                 
@@ -534,7 +552,7 @@
             <!-- Servicio 08 -->
             <article class="service-card" id="servicio-08">
               <div class="service-card-header">
-                <span class="service-chip">ID 08</span>
+                <span class="service-chip">C-1</span>
                 <h4 class="service-title">Research Data Platform</h4>
                 <p class="service-description">Organización y gestión técnica de datasets científicos.</p>
                 
@@ -561,7 +579,7 @@
             <!-- Servicio 09 -->
             <article class="service-card" id="servicio-09">
               <div class="service-card-header">
-                <span class="service-chip">ID 09</span>
+                <span class="service-chip">C-2</span>
                 <h4 class="service-title">Data Engineering</h4>
                 <p class="service-description">Diseño, implementación y mantenimiento acordado de pipelines de datos.</p>
                 
@@ -588,7 +606,7 @@
             <!-- Servicio 10 -->
             <article class="service-card" id="servicio-10">
               <div class="service-card-header">
-                <span class="service-chip">ID 10</span>
+                <span class="service-chip">C-3</span>
                 <h4 class="service-title">Data Preparation</h4>
                 <p class="service-description">Preparación de datasets mediante calidad, limpieza, normalización y anotación.</p>
                 
@@ -627,7 +645,7 @@
             <!-- Servicio 11 -->
             <article class="service-card" id="servicio-11">
               <div class="service-card-header">
-                <span class="service-chip">ID 11</span>
+                <span class="service-chip">D-1</span>
                 <h4 class="service-title">Research MLOps</h4>
                 <p class="service-description">Herramientas y operación para gestionar experimentos, modelos y artefactos.</p>
                 
@@ -654,7 +672,7 @@
             <!-- Servicio 12 -->
             <article class="service-card" id="servicio-12">
               <div class="service-card-header">
-                <span class="service-chip">ID 12</span>
+                <span class="service-chip">D-2</span>
                 <h4 class="service-title">Reproducible Research</h4>
                 <p class="service-description">Empaquetado técnico de experimentos para facilitar su reconstrucción y nueva ejecución.</p>
                 
@@ -681,7 +699,7 @@
             <!-- Servicio 13 -->
             <article class="service-card" id="servicio-13">
               <div class="service-card-header">
-                <span class="service-chip">ID 13</span>
+                <span class="service-chip">D-3</span>
                 <h4 class="service-title">Model Access</h4>
                 <p class="service-description">Acceso integrado a modelos comerciales y de código abierto mediante una puerta común.</p>
                 
@@ -708,7 +726,7 @@
             <!-- Servicio 14 -->
             <article class="service-card" id="servicio-14">
               <div class="service-card-header">
-                <span class="service-chip">ID 14</span>
+                <span class="service-chip">D-4</span>
                 <h4 class="service-title">Model Deployment</h4>
                 <p class="service-description">Publicación técnica de modelos como APIs, demostradores o servicios de inferencia.</p>
                 
@@ -747,7 +765,7 @@
             <!-- Servicio 15 -->
             <article class="service-card" id="servicio-15">
               <div class="service-card-header">
-                <span class="service-chip">ID 15</span>
+                <span class="service-chip">E-1</span>
                 <h4 class="service-title">Research Security</h4>
                 <p class="service-description">Configuración y administración de controles de seguridad e identidad para laboratorios.</p>
                 
@@ -774,7 +792,7 @@
             <!-- Servicio 16 -->
             <article class="service-card" id="servicio-16">
               <div class="service-card-header">
-                <span class="service-chip">ID 16</span>
+                <span class="service-chip">E-2</span>
                 <h4 class="service-title">Research Cost Control</h4>
                 <p class="service-description">Seguimiento y gestión del gasto tecnológico de los recursos contratados.</p>
                 
@@ -801,7 +819,7 @@
             <!-- Servicio 17 -->
             <article class="service-card" id="servicio-17">
               <div class="service-card-header">
-                <span class="service-chip">ID 17</span>
+                <span class="service-chip">E-3</span>
                 <h4 class="service-title">Research Helpdesk</h4>
                 <p class="service-description">Soporte especializado y capacitación acordada para herramientas de investigación.</p>
                 
@@ -840,7 +858,7 @@
             <!-- Servicio 18 -->
             <article class="service-card" id="servicio-18">
               <div class="service-card-header">
-                <span class="service-chip">ID 18</span>
+                <span class="service-chip">F-1</span>
                 <h4 class="service-title">AI Engineering</h4>
                 <p class="service-description">Implementación y optimización técnica de componentes de IA.</p>
                 
@@ -867,7 +885,7 @@
             <!-- Servicio 19 -->
             <article class="service-card" id="servicio-19">
               <div class="service-card-header">
-                <span class="service-chip">ID 19</span>
+                <span class="service-chip">F-2</span>
                 <h4 class="service-title">AI Research Consulting</h4>
                 <p class="service-description">Asesoramiento técnico sobre IA y preparación para una eventual transferencia tecnológica.</p>
                 
@@ -1079,40 +1097,40 @@
                     <option value="lab">AI Research LAB — solución integrada</option>
                     
                     <optgroup label="Familia A: Inicio e integración">
-                      <option value="01">Research Launch</option>
-                      <option value="02">Research Integration</option>
-                      <option value="03">One Stop Research IT</option>
+                      <option value="01">A-1 · Research Launch</option>
+                      <option value="02">A-2 · Research Integration</option>
+                      <option value="03">A-3 · One Stop Research IT</option>
                     </optgroup>
 
                     <optgroup label="Familia B: Infraestructura y plataforma">
-                      <option value="04">Research Workspace</option>
-                      <option value="05">GPU Compute</option>
-                      <option value="06">Research Storage</option>
-                      <option value="07">Hybrid Research</option>
+                      <option value="04">B-1 · Research Workspace</option>
+                      <option value="05">B-2 · GPU Compute</option>
+                      <option value="06">B-3 · Research Storage</option>
+                      <option value="07">B-4 · Hybrid Research</option>
                     </optgroup>
 
                     <optgroup label="Familia C: Datos e ingeniería">
-                      <option value="08">Research Data Platform</option>
-                      <option value="09">Data Engineering</option>
-                      <option value="10">Data Preparation</option>
+                      <option value="08">C-1 · Research Data Platform</option>
+                      <option value="09">C-2 · Data Engineering</option>
+                      <option value="10">C-3 · Data Preparation</option>
                     </optgroup>
 
                     <optgroup label="Familia D: Experimentación, MLOps y modelos">
-                      <option value="11">Research MLOps</option>
-                      <option value="12">Reproducible Research</option>
-                      <option value="13">Model Access</option>
-                      <option value="14">Model Deployment</option>
+                      <option value="11">D-1 · Research MLOps</option>
+                      <option value="12">D-2 · Reproducible Research</option>
+                      <option value="13">D-3 · Model Access</option>
+                      <option value="14">D-4 · Model Deployment</option>
                     </optgroup>
 
                     <optgroup label="Familia E: Operación, seguridad y soporte">
-                      <option value="15">Research Security</option>
-                      <option value="16">Research Cost Control</option>
-                      <option value="17">Research Helpdesk</option>
+                      <option value="15">E-1 · Research Security</option>
+                      <option value="16">E-2 · Research Cost Control</option>
+                      <option value="17">E-3 · Research Helpdesk</option>
                     </optgroup>
 
                     <optgroup label="Familia F: Ingeniería especializada y consultoría">
-                      <option value="18">AI Engineering</option>
-                      <option value="19">AI Research Consulting</option>
+                      <option value="18">F-1 · AI Engineering</option>
+                      <option value="19">F-2 · AI Research Consulting</option>
                     </optgroup>
                   </select>
                   <span class="field-error-msg hidden" id="contact-service-error"></span>
@@ -1217,7 +1235,7 @@
   <div id="screen-reader-announcer" class="hp-field" role="status" aria-live="polite"></div>
 
   <!-- Main JavaScript Application -->
-  <script src="/js/app.js?v=2.1"></script>
+  <script src="/js/app.js?v=2.3"></script>
 
 </body>
 </html>
